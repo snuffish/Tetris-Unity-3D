@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ca9ba2e7-1915-4c8e-8a02-0ee199f09fe7}">
+		<property name="assetPath">
+			<value>Ambience/Acid_Pool.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>15.671995464852607</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{44549070-cda8-4583-b21e-471c7ad0a03b}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{021f90bf-436a-484e-be4f-065b16252f34}">
+		<property name="assetPath">
+			<value>Ljud/Music/ExtraMusicAssets/CatastrophyCacaphony/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{44549070-cda8-4583-b21e-471c7ad0a03b}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheet.uss?fileID=7433441132597879392&amp;guid=f7bb7070113c76641afd7d54db523b24&amp;type=3#Stylesheet" />
+    <ui:VisualElement style="height: 233px; width: 215px; align-items: center; justify-content: center; flex-direction: column; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+        <ui:Label text="SCORE" display-tooltip-when-elided="true" style="font-size: 50px; display: flex; visibility: visible; -unity-font-style: bold; opacity: 1; -unity-text-align: upper-left; color: rgb(255, 165, 165);" />
+        <ui:Label text="0" display-tooltip-when-elided="true" name="GameScore" style="font-size: 75px; color: rgb(143, 144, 243); -unity-font-style: bold; -unity-text-align: upper-left; white-space: nowrap;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="height: 233px; width: 215px; align-items: center; justify-content: center; flex-direction: column; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+        <ui:Label text="TIME" display-tooltip-when-elided="true" style="font-size: 50px; display: flex; visibility: visible; -unity-font-style: bold; opacity: 1; -unity-text-align: upper-left; color: rgb(255, 165, 165);" />
+        <ui:Label text="0" display-tooltip-when-elided="true" name="PlayedTime" style="font-size: 75px; color: rgb(143, 144, 243); -unity-font-style: bold; -unity-text-align: upper-left; white-space: nowrap;" />
+    </ui:VisualElement>
+</ui:UXML>

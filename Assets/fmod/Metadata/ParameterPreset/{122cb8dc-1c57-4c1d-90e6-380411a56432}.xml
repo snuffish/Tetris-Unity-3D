@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{122cb8dc-1c57-4c1d-90e6-380411a56432}">
+		<property name="name">
+			<value>NearDeath</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0d2ca0f2-6e93-4dc0-8a5f-a7241b691ad8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{981e2f00-3f43-4029-9da2-25f6dae0f74f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{981e2f00-3f43-4029-9da2-25f6dae0f74f}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>20</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

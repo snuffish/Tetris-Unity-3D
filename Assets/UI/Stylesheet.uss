@@ -1,0 +1,5 @@
+.textLabel {
+    font-size: 50px;
+    -unity-font-style: bold;
+    display: flex;
+}
