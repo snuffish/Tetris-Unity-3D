@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Tetromino;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -38,22 +39,15 @@ public class ExplodeTetrominoBlock : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        Debug.Log("Explode!");
+        _blocks.ForEach(block => {
+            Rigidbody rb = block.AddComponent<Rigidbody>();
+            block.SetParent(null);
 
-        try {
-            _blocks.ForEach(block => {
-                Rigidbody rb = block.AddComponent<Rigidbody>();
-                block.SetParent(null);
-
-                if (DestroyInsteadOfExplode) {
-                    Destroy(block.gameObject);
-                } else {
-                    rb.AddExplosionForce(BlockExplosionForce, ExplosionPosition, 20f);
-                }
-            });
-        }
-        catch (Exception e) {
-            int t = 5;
-        }
+            if (DestroyInsteadOfExplode) {
+                Destroy(block.gameObject);
+            } else {
+                rb.AddExplosionForce(BlockExplosionForce, ExplosionPosition, 20f);
+            }
+        });
     }
 }

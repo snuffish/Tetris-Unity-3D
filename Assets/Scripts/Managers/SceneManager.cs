@@ -1,4 +1,5 @@
 using System.Collections;
+using Tetromino;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ public class SceneManager : MonoBehaviour {
     }
 
     public IEnumerator ExplodeTetroMinosAndLoadGame() {
-        MainMenuManager.Instance.enabled = false;
+        // MainMenuManager.Instance.enabled = false;
         MenuCanvas.SetActive(false);
 
         #region Explode All Tetrominos

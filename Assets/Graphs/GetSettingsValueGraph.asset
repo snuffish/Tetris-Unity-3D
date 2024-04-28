@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: GetSettingsValueGraph
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Exit","label":null,"summary":null,"hideLabel":true}],"valueInputDefinitions":[],"valueOutputDefinitions":[{"_type":"System.Collections.Generic.List`1[[UnityEngine.Transform,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","key":"GetPrefabs","label":null,"summary":null,"hideLabel":false},{"_type":"System.Single","key":"Y-Axis
+      Spawner","label":null,"summary":null,"hideLabel":false},{"_type":"System.Single","key":"Y-Axis
+      Respawner","label":null,"summary":null,"hideLabel":false},{"_type":"System.Collections.Generic.List`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]","key":"Block
+      Rotating Speed","label":null,"summary":null,"hideLabel":false},{"_type":"System.Single","key":"Falling
+      Speed","label":null,"summary":null,"hideLabel":false},{"_type":"System.Single","key":"Number
+      of Blocks","label":null,"summary":null,"hideLabel":false},{"_type":"System.Single","key":"Random
+      Seconds For Block Spawn","label":null,"summary":null,"hideLabel":false}],"title":"GetSettingsValue","summary":null,"pan":{"x":229.0155,"y":387.1103},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Settings","$type":"System.String"}},"position":{"x":-42.0,"y":193.0},"guid":"cddf65b3-b057-48f1-bfe6-a7daf7fba617","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"18"},{"type":"ScriptableObjects.GameSettings","instance":true,"static":true,"defaultValues":{"target":null},"position":{"x":155.0,"y":156.0},"guid":"2e9cb6b3-f1aa-4e28-8a36-28035a13acc8","$version":"A","$type":"Unity.VisualScripting.Expose","$id":"20"},{"defaultValues":{},"position":{"x":554.0,"y":60.0},"guid":"8a091195-dea0-4cd1-bbc5-6ac9381f7ead","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"22"},{"defaultValues":{},"position":{"x":209.0,"y":14.0},"guid":"b7d56f75-eb66-4124-ba0d-eb6d9aa0122a","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"24"},{"sourceUnit":{"$ref":"24"},"sourceKey":"Enter","destinationUnit":{"$ref":"22"},"destinationKey":"Exit","guid":"38847827-571f-41bf-92e0-4523995fd883","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"20"},"destinationKey":"target","guid":"4d0e85c2-fa1d-4488-b48a-0cd2dabb05a7","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"Prefabs","destinationUnit":{"$ref":"22"},"destinationKey":"GetPrefabs","guid":"cbed954a-603d-41e5-b2ec-e3423cff2562","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"RandomSecondsForBlockSpawn","destinationUnit":{"$ref":"22"},"destinationKey":"Random
+      Seconds For Block Spawn","guid":"0a5e758b-d4cc-40fb-a1c7-bee632a9a7c0","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"BlockRotatingSpeed","destinationUnit":{"$ref":"22"},"destinationKey":"Block
+      Rotating Speed","guid":"e6cbb9cd-76b8-4221-974d-c0de7df4cfe2","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"NumberOfBlocks","destinationUnit":{"$ref":"22"},"destinationKey":"Number
+      of Blocks","guid":"9e81ff42-9b72-4833-85c7-0a34047f2335","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"YAxisSpawner","destinationUnit":{"$ref":"22"},"destinationKey":"Y-Axis
+      Spawner","guid":"05a5d1e8-deaa-4111-98d7-7fa82ba1d100","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"YAxisRespawner","destinationUnit":{"$ref":"22"},"destinationKey":"Y-Axis
+      Respawner","guid":"4e4d0725-794f-4585-b52d-9db310ad5328","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"FallingSpeed","destinationUnit":{"$ref":"22"},"destinationKey":"Falling
+      Speed","guid":"8a513865-640d-4fb1-bbd7-8f4d704e45d9","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
