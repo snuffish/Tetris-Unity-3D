@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: -336279439448461200}
   - component: {fileID: -3297382759503387657}
   - component: {fileID: -1669792842502379390}
-  - component: {fileID: 7599350984841756052}
   m_Layer: 0
   m_Name: I
   m_TagString: Tetromino
@@ -170,48 +169,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7599350984841756052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2298438929873173126}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf85d31e9a014904b18e43f61019a029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFlip:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4036724549115557885}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnCollision:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4816545148671985425}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &5238862840050136917
 GameObject:
   m_ObjectHideFlags: 0

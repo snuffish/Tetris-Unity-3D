@@ -1,6 +1,14 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class TestScript : MonoBehaviour {
-    private void Update() {
-    }
+[Serializable]
+public class MyIntEvent : UnityEvent<int>
+{
+
+}
+
+public class TestScript : MonoBehaviour
+{
+    public UnityEvent myTestEvent;
 }

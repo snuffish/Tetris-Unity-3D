@@ -46,9 +46,9 @@ public class GridManager : MonoBehaviour {
                 triggers.ForEach(item => {
                     if (item.IsOccupied) {
                         if (MarkInsteadOfExplodeBlocks) {
-                            item.OccupiedByBlock.Marked(true);
+                            // item.OccupiedByBlock.Marked(true);
                         } else {
-                            item.OccupiedByBlock.Explode();
+                            // item.OccupiedByBlock.Explode();
                             OnClearedBlock?.Invoke();
                         }
                     }

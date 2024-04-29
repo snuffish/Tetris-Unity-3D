@@ -1,38 +1,38 @@
-using Tetromino;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace State
+namespace State.Events
 {
     public class FallingBlocks : MonoBehaviour
     {
         public float NumberOfBlocks;
         public float BlocksInScene;
         public float RandomSecondsForBlockSpawn;
-        private Transform[] Prefabs;
+
+        public Transform[] Prefabs;
 
         public Transform Spawner;
         public Transform Container;
 
-        private MonoBehaviour _instance;
-
         private void Awake()
         {
-            _instance = this;
+            // Container = GameObject.Find("FallingBlocksContainer").transform;
+            // Spawner = Container.GetComponentsInChildren();
+            // var child = Container.GetComponentInChildren<GameObject>();
+            // if (child.CompareTag("Spawner")) {
+            //     Debug.Log("1111111111111111");
+            // }
         }
 
-        public void Update()
+        private void Update()
         {
-            // NumberOfBlocks = State.GetVariableValue<float>(ref _instance, "NumberOfBlocks");
-            // BlocksInScene = State.GetVariableValue<float>(ref _instance, "BlocksInScene");
-            // Prefabs = State.GetVariableValue<Transform[]>(ref _instance, "Prefabs");
-            // RandomSecondsForBlockSpawn = State.GetVariableValue(ref _instance, "RandomSecondsForBlockSpawn");
-
-            if (NumberOfBlocks > BlocksInScene)
-                    Invoke("SpawnBlock", Random.Range(0, RandomSecondsForBlockSpawn));
+            if (NumberOfBlocks > BlocksInScene) {
+                Invoke("SpawnBlock", Random.Range(0, RandomSecondsForBlockSpawn));
+                BlocksInScene++;
+            }
         }
 
-        private Vector3 GetSpawnPosition()
+        public Vector3 GetSpawnPosition()
         {
             var spawnerScale = Spawner.localScale;
             var xScale = spawnerScale.x / 2;
@@ -47,13 +47,14 @@ namespace State
             return position;
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         public void SpawnBlock()
         {
             Vector3 position = GetSpawnPosition();
 
             var prefab = Prefabs[Random.Range(0, Prefabs.Length)];
             var block = Instantiate(prefab, position, Quaternion.identity, Container);
-            block.AddComponent<DroppingBlockController>();
+            block.AddComponent<FallingBlocks>();
         }
     }
 }

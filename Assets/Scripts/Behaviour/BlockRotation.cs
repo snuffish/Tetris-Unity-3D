@@ -1,28 +1,29 @@
-using System;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
-public class BlockRotation : MonoBehaviour
+namespace Behaviour
 {
-    private float _rotationSpeed = 0f;
-    public bool IsRotating => _rotationSpeed > 0f;
-
-    private void Start()
+    public class BlockRotation : MonoBehaviour
     {
-        SetRandomRotatingSpeed();
-    }
+        private float _rotationSpeed = 0f;
+        public bool IsRotating => _rotationSpeed > 0f;
 
-    private void FixedUpdate()
-    {
+        private void Start()
+        {
+            SetRandomRotatingSpeed();
+        }
 
-        var from = Quaternion.Euler(0, 0, -25);
-        var to = Quaternion.Euler(0, 0, 25);
+        private void FixedUpdate()
+        {
 
-        transform.rotation *= Quaternion.Euler(0, 0, 25 * _rotationSpeed * Time.deltaTime);
-    }
+            var from = Quaternion.Euler(0, 0, -25);
+            var to = Quaternion.Euler(0, 0, 25);
 
-    public void SetRandomRotatingSpeed()
-    {
-        // _rotationSpeed = MainMenuManager.Instance.BlockRotatingSpeed[Random.Range(0, MainMenuManager.Instance.BlockRotatingSpeed.Length)];
+            transform.rotation *= Quaternion.Euler(0, 0, 25 * _rotationSpeed * Time.deltaTime);
+        }
+
+        public void SetRandomRotatingSpeed()
+        {
+            // _rotationSpeed = MainMenuManager.Instance.BlockRotatingSpeed[Random.Range(0, MainMenuManager.Instance.BlockRotatingSpeed.Length)];
+        }
     }
 }

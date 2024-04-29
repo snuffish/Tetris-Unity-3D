@@ -1,0 +1,4 @@
+repository "Tetris3D"
+  path "/"
+    br "/main"
+    co "/main"

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: first
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"First
+      Script Machine","summary":null,"pan":{"x":-4.0,"y":137.0},"zoom":1.0,"elements":[{"argumentCount":0,"defaultValues":{"name":{"$content":"OnTest","$type":"System.String"},"target":null},"position":{"x":68.0,"y":3.0},"guid":"cfbf1343-815a-4d84-841a-a1ba8acf379a","$version":"A","$type":"Unity.VisualScripting.TriggerCustomEvent","$id":"9"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"3c0d406c-c78b-4f2d-a389-0be720c430f5","$version":"A","$type":"Unity.VisualScripting.Update","$id":"11"},{"sourceUnit":{"$ref":"11"},"sourceKey":"trigger","destinationUnit":{"$ref":"9"},"destinationKey":"enter","guid":"b25fe533-0731-4302-b7e0-6895855a2214","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []

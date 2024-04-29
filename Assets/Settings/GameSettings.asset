@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96b87d05d6e64ecf95e1cdc4d5e5ff74, type: 3}
-  m_Name: Settings
+  m_Name: GameSettings
   m_EditorClassIdentifier: 
   Prefabs:
   - {fileID: 2298438929873173120, guid: ead32f97c5f3a674987d8fdbca093226, type: 3}
@@ -20,7 +20,7 @@ MonoBehaviour:
   - {fileID: 2298438929873173120, guid: 628fda51fa577f14c94d519adc90fd2b, type: 3}
   - {fileID: 2298438929873173120, guid: d0e58871a955a7941b306490eb6ff492, type: 3}
   - {fileID: 2298438929873173120, guid: df3e071ae5f432c4299850a005f0e8f3, type: 3}
-  RandomSecondsForBlockSpawn: 0
+  RandomSecondsForBlockSpawn: 3
   BlockRotatingSpeed:
   - 25
   - -40

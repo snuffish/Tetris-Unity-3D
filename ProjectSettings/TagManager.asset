@@ -11,6 +11,7 @@ TagManager:
   - TetrominoBlock
   - Spawner
   - DeSpawner
+  - States
   layers:
   - Default
   - TransparentFX

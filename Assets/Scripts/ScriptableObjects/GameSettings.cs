@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using Tetromino;
-using UnityEditor;
 using UnityEngine;
 
 namespace ScriptableObjects
