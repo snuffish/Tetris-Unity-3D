@@ -28,11 +28,6 @@ namespace Tetromino
             _rigidbody.detectCollisions = true;
         }
 
-        public void DisableRagdoll() {
-            _rigidbody.isKinematic = true;
-            _rigidbody.detectCollisions = false;
-        }
-
         private void Update() {
             if (Input.GetKeyDown(KeyCode.UpArrow))
                 Flip();

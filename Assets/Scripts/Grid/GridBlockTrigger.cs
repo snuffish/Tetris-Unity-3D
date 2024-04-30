@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using Tetromino;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class GridBlockTrigger : MonoBehaviour {
     public bool OCCUPIED;
@@ -12,7 +10,7 @@ public class GridBlockTrigger : MonoBehaviour {
     
     private Color _defaultColor;
     private Renderer _renderer;
-    private TetrominoBlock _occupiedByBlock;
+    private OldTetrominoBlock _occupiedByBlock;
 
     public float yPos {
         get { return _y; }
@@ -24,7 +22,7 @@ public class GridBlockTrigger : MonoBehaviour {
         set { _x = value; }
     }
     
-    public TetrominoBlock OccupiedByBlock => _occupiedByBlock;
+    public OldTetrominoBlock OccupiedByBlock => _occupiedByBlock;
     public bool IsOccupied => OccupiedByBlock != null;
 
     private void Awake() {
@@ -33,7 +31,7 @@ public class GridBlockTrigger : MonoBehaviour {
     }
 
     private void OnTriggerStay(Collider hit) {
-        if (hit.TryGetComponent(out TetrominoBlock block))
+        if (hit.TryGetComponent(out OldTetrominoBlock block))
             _occupiedByBlock = block;
     }
 

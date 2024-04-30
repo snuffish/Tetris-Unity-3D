@@ -20,13 +20,13 @@ public class ExplodeTetrominoBlock : MonoBehaviour {
 
     private void Awake() {
         #region If the current Object is a Block
-            var singleBlock = GetComponent<TetrominoBlock>();
+            var singleBlock = GetComponent<OldTetrominoBlock>();
             if (singleBlock != null)
                 _blocks.Add(singleBlock.transform);
         #endregion
 
         #region If the Child objects is a Block
-            var childBlocks = GetComponentsInChildren<TetrominoBlock>();
+            var childBlocks = GetComponentsInChildren<OldTetrominoBlock>();
             if (childBlocks != null)
                 foreach (var block in childBlocks)
                     _blocks.Add(block.transform);
